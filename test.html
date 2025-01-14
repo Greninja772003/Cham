@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Galindo&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="test.css" />
+    <title>CHAM</title>
+
+    <style>
+        canvas {
+            border: 4px solid black;
+            background-color: wheat;
+        }
+
+        #canvas-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        #cancel-button,
+        #flip-button {
+            display: none;
+            position: absolute;
+            top: 5px;
+            background: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #cancel-button {
+            right: 5px;
+        }
+
+        #flip-button {
+            left: 5px;
+        }
+
+        #download {
+            display: none;
+        }
+
+        #bg-upload {
+            display: none; /* Hide the original file input */
+        }
+    </style>
+</head>
+<body>
+    <a href="./index.html"><img class="backArrow" src="backwardArrow.png" /></a>
+    <div class="content">
+        <h2>Smoke a Cigar</h1>
+        
+        <div id="canvas-container">
+            <canvas id="canvas" width="500" height="500"></canvas>
+            <button id="cancel-button">X</button>
+            <button id="flip-button">Flip</button>
+        </div>
+        <!-- Replace the file input with a button -->
+        <button class="eventBtn" id="add-image">Add Image</button>
+        <input type="file" id="bg-upload" accept="image/*">
+        <button class="eventBtn" id="download">Save</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamenomics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <a href="./index.html"><img class="backArrow" src="backwardArrow.png" /></a>
+    <div class="content">
+        <h1>Chamenomics</h1>
+        <div class="chart-container">
+            <canvas id="chamenomicsChart"></canvas>
+        </div>
+        <div class="chart-legend" id="chartLegend"></div>
+        <div class="details">
+            <table class="details-table">
+                <tr>
+                    <th>Allocation</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>To be burned</td>
+                    <td>2%</td>
+                </tr>
+                <tr>
+                    <td>Team allocation</td>
+                    <td>1%</td>
+                </tr>
+                <tr>
+                    <td>Marketing and giveaways</td>
+                    <td>1.5%</td>
+                </tr>
+                <tr>
+                    <td>Partnerships</td>
+                    <td>0.5%</td>
+                </tr>
+                <tr>
+                    <td>Public Supply</td>
+                    <td>95%</td>
+                </tr>
+            </table>
+        </div>
+        <div class="links">
+            <div class="leftLinks">
+
+                <a href="https://x.com/CharlestheCham" title="X"><img class="x" src="twitter.svg" alt="X"></a>
+                <a href="https://discord.gg/VWuHz2c74b" title="Discord"><img class="x" src="./discord.png"
+                        alt="Discord"></a>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        const ctx = document.getElementById('chamenomicsChart').getContext('2d');
+        const chamenomicsChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['To be burned', 'Team allocation', 'Marketing and giveaways', 'Partnerships', 'Public Supply'],
+                datasets: [{
+                    data: [2, 1, 1.5, 0.5, 95],
+                    backgroundColor: ['#FFD700', '#FF6347', '#77DD77', '#87CEEB', '#FFA500'],
+                    borderColor: 'black',
+                    borderWidth: 2,
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        enabled: true,
+                    }
+                },
+                elements: {
+                    arc: {
+                        borderWidth: 2,
+                        borderColor: 'black',
+                    }
+                }
+            },
+        });
+
+        const chartLegend = document.getElementById('chartLegend');
+        chartLegend.innerHTML = chamenomicsChart.generateLegend();
+    </script>
+</body>
+
+</html>

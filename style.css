@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(43, 110, 253);
+    font-family: "Galindo", serif;
+    background-image: url("./assets/rays.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 3rem;
+}
+
+.navleft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-brand {
+    /* padding: .5rem 2rem; */
+    display: flex;
+    align-items: center;
+    font-size: 2.8rem;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-img {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 20px;
+    border: 5px solid black;
+    /* object-fit: cover; */
+}
+
+.nav-btn {
+    font-family: "Galindo", serif;
+    /* font-weight: bold; */
+    background-color: rgb(245, 176, 64);
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: center;
+    text-decoration: none;
+    color: black;
+    border: solid 4px black;
+}
+
+.nav-btn:hover {
+    background-color: rgb(255, 157, 0);
+    border: solid 6px black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    color: white;
+    gap: 10px;
+
+}
+
+.main img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 60px;
+    border: solid 10px rgb(0, 0, 0);
+}
+
+.header {
+    font-size: 5rem;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.headerText {
+    font-family: cursive;
+    font-weight: bold;
+    margin: 0;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* margin-bottom: 1rem; */
+    padding: 0 2rem;
+    height: 10vh;
+    /* margin-top: 1rem; */
+}
+
+.centerLinks2 {
+    margin-top: 1rem;
+}
+
+.leftLinks {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    /* margin-left: 2rem; */
+}
+
+.links img {
+    width: 4rem;
+    height: 4rem;
+    /* background-color: black; */
+    border-radius: 50%;
+}
+
+.centerLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.centerBtn {
+    /* margin-top: 2rem; */
+    background-color: rgb(248, 48, 48);
+    color: white;
+    border: solid 4px black;
+    padding: .8rem 1.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: "Galindo", serif;
+    text-decoration: none;
+}
+
+.centerBtn:hover {
+    background-color: rgb(218, 7, 7);
+    border: solid 6px black;
+    /* text-decoration: underline; */
+}
+
+.centerBtn2 {
+    /* margin-top: 1rem; */
+    display: block;
+    background-color: rgb(49, 116, 73);
+    color: white;
+    border: solid 4px black;
+    padding: .8rem 1.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: "Galindo", serif;
+    text-decoration: none;
+}
+
+.centerBtn2:hover {
+    background-color: rgb(11, 91, 39);
+    border: solid 6px black;
+    /* text-decoration: underline; */
+}
+
+.rightBtn {
+    background-color: rgb(98, 43, 14);
+    color: white;
+    border: solid 4px black;
+    padding: .8rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Galindo", serif;
+    text-decoration: none;
+}
+
+.rightBtn:hover {
+    background-color: rgb(87, 26, 0);
+    border: solid 6px black;
+
+    .discord {
+        transform: rotate(-6deg);
+    }
+
+    .insta {
+        transform: rotate(-6deg);
+    }
+
+    .telegram {
+        transform: rotate(6deg);
+    }
+
+    .x {
+        transform: rotate(6deg);
+    }
+
+    .center-Btn:hover {
+        background-color: rgb(218, 7, 7);
+        border: solid 6px black;
+        /* text-decoration: underline; */
+    }
+
+
+    @media (max-width: 800px) {
+        .navbar {
+            padding: .5rem 1rem;
+
+        }
+
+        .nav-brand {
+            font-size: 2rem;
+        }
+
+        .nav-btn {
+            padding: .3rem .8rem;
+            font-size: .8rem;
+        }
+
+        .main h1 {
+            font-size: 3rem;
+        }
+
+        .main img {
+            width: 18rem;
+            height: 18rem;
+        }
+
+        .main {
+            margin-bottom: 3rem;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 2rem;
+
+            /* margin-top: 1rem; */
+        }
+
+        .links img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .centerBtn {
+            padding: .5rem 1rem;
+            font-size: 2rem;
+            transform: rotate(0deg);
+            margin: 0;
+        }
+
+        .rightBtn {
+            padding: .3rem 1rem;
+            font-size: .8rem;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .navbar {
+            padding: .5rem 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .nav-brand {
+            font-size: 1.5rem;
+        }
+
+        .nav-btn {
+            padding: .2rem .5rem;
+            font-size: .8rem;
+        }
+
+        .nav-img {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        .main h1 {
+            font-size: 3rem;
+        }
+
+        .main img {
+            width: 15rem;
+            height: 15rem;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+            /* margin-top: 1rem; */
+            gap: 2rem;
+        }
+
+        .links img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .centerBtn {
+            padding: .3rem 1rem;
+            font-size: 2rem;
+            transform: rotate(0deg);
+            margin: 0;
+        }
+
+        .rightBtn {
+            padding: .5rem 1rem;
+            font-size: .8rem;
+        }
+    }
